@@ -1,6 +1,7 @@
 import tensorflow as tf
 from scipy.io import loadmat as load
 from matplotlib import pyplot as plt
+import numpy as np
 
 train_data = load('train_32x32.mat')
 test_data = load('test_32x32.mat')
@@ -9,8 +10,6 @@ extra_data = load('extra_32x32.mat')
 
 print('train_data shape:', train_data['X'].shape)
 print('train_data label shape', train_data['y'].shape)
-
-
 
 print('test_data shape:', test_data['X'].shape)
 print('test_data label shape', test_data['y'].shape)
@@ -33,7 +32,6 @@ def reformat(dataset, label):
     
     # generate one-hot coding label
     label = np.mod(label, num_classes)
-    label = np.array
     one_hot = np.eye(num_classes)[label]
     return dataset, one_hot
 
@@ -50,10 +48,15 @@ def normalize(samples):
         
     normalized = np.apply_over_axes(normalize,gray,[1,2])
 
-def label_distribution(labels):
-    pass
-    
-    
+def label_distribution(labels, title):
+    label_sum = np.sum(labels,0)
+    labels = np.arange(0,10)
+    fig,ax = plt.subplots(1,1)
+    ax.bar(labels,label_sum.reshape(-1))
+    ax.set_title(title)
+    ax.set_xlabel('label')
+    ax.set_ylabel('count')
+    return fig
     
     
 def show_image(dataset, labels, i):
@@ -61,7 +64,20 @@ def show_image(dataset, labels, i):
     plt.show()
     
 
+if __name__=='__main__':
+    _, train_one_hot = reformat(train_samples, train_labels)
+    fig = label_distribution(train_one_hot,'label distribution in train samples')
+    fig.show()
+    
+    _, test_one_hot = reformat(test_samples, test_labels)
+    fig2 = label_distribution(test_one_hot, 'label distribution in test samples')
+    fig2.show()
 
+    
+
+ 
+    
+    
 
 
              
