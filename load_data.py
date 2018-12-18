@@ -23,7 +23,6 @@ num_labels = 10
 image_size = 32
 
 def reformat(dataset, label):
-    pass
     # orignal dimension: height x width x channel x num_samples
     # reshape to: num_samples x height x width x channel
     num_samples = dataset.shape[3]
