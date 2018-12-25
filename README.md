@@ -10,6 +10,7 @@ Notes of tf_girls
 https://stackoverflow.com/questions/45068853/how-does-this-one-hot-vector-conversion-work
 
 2. load mnist dataset
+
     There are two ways to load mnist dataset. One way (deprecated) is to 
 
        from tensorflow.examples.tutorials.mnist import input_data
