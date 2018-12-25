@@ -29,4 +29,9 @@ https://stackoverflow.com/questions/45068853/how-does-this-one-hot-vector-conver
   
        (x_train, y_train),(x_test, y_test) = mnist.load_data()
  
+ 3. How to visualize intermediate and final results in 
  
+ 4. Tutorial of "How to use Dataset in Tensorflow" 
+    link: https://towardsdatascience.com/how-to-use-dataset-in-tensorflow-c758ef9e4428
+    
+    cs20i compares placeholder and dataset in https://docs.google.com/document/d/1kMGs68rIHWHifBiqlU3j_2ZkrNj9RquGTe8tJ7eR1sE/edit
