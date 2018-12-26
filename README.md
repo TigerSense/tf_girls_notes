@@ -9,7 +9,9 @@ Notes of tf_girls
 1. How does this one-hot coding np.eye(n_labels)[target_vector] works?
 https://stackoverflow.com/questions/45068853/how-does-this-one-hot-vector-conversion-work
 
-2. load mnist dataset (Tuesday afternoon, 12-25-2018, finished mnist_fc_placeholder.py)
+2. Tuesday afternoon, 12-25-2018, finished mnist_fc_placeholder.py 
+
+    load mnist dataset 
 
     There are two ways to load mnist dataset. One way (deprecated) is to 
 
@@ -31,7 +33,9 @@ https://stackoverflow.com/questions/45068853/how-does-this-one-hot-vector-conver
  
  3. How to visualize intermediate and final results 
  
- 4. Tuesday night, 12-25-2018, Tutorial of "How to use Dataset in Tensorflow" (finished the tutorial reading and dataset_tutorial.py)
+ 4. Tuesday night, 12-25-2018, finished the tutorial reading and dataset_tutorial.py
+ 
+    Tutorial of "How to use Dataset in Tensorflow"
  
     link: https://towardsdatascience.com/how-to-use-dataset-in-tensorflow-c758ef9e4428 (In this tutorial, all the examples mix    placeholder with dataset which I think totally lost the point of using dataset. Demos in cs20i are more proper examples. )
     
