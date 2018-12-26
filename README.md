@@ -33,6 +33,6 @@ https://stackoverflow.com/questions/45068853/how-does-this-one-hot-vector-conver
  
  4. Tutorial of "How to use Dataset in Tensorflow" (Tuesday night, 12-25-2018, finished the tutorial reading)
  
-    link: https://towardsdatascience.com/how-to-use-dataset-in-tensorflow-c758ef9e4428 (In this tutorial, all the examples mix    placeholder with dataset which I think totally lost the point of using dataset. Demos in cs20i are more proper examples. 
+    link: https://towardsdatascience.com/how-to-use-dataset-in-tensorflow-c758ef9e4428 (In this tutorial, all the examples mix    placeholder with dataset which I think totally lost the point of using dataset. Demos in cs20i are more proper examples. )
     
     cs20i compares placeholder and dataset in https://docs.google.com/document/d/1kMGs68rIHWHifBiqlU3j_2ZkrNj9RquGTe8tJ7eR1sE/edit
