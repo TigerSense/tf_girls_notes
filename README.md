@@ -23,6 +23,9 @@ https://stackoverflow.com/questions/45068853/how-does-this-one-hot-vector-conver
        
        mnist.test.num_examples return number of elements in test. Same for train.
        
+       x_train = mnist.train.images
+       y_train = mnist.train.labels
+       
     A very good example can be found here https://github.com/snehalvartak/MNIST/blob/master/FullyConnectedNet.ipynb
  
     Another way is to load mnist from keras
