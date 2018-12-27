@@ -46,3 +46,4 @@ https://stackoverflow.com/questions/45068853/how-does-this-one-hot-vector-conver
     
  5. Wednesday, 12-26-2018, completed mnist classification using dataset rather than placeholder (mnist_fc_dataset.py)
  6. Thursday,  12-27-2018, summarize the usage of dataset (learn to use jupyter notebook), figure out how shuffle works and what does buffer_size mean.
+ 7. complete mnist classification using convNet. Refer to code https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/convolutional_network_raw.py
